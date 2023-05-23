@@ -195,7 +195,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             rformError();
-            rsubmitMSG(false, "Please fill all fields!");
+            rsubmitMSG(false, "¡Por favor, completa todos los campos!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -227,7 +227,7 @@
 
     function rformSuccess() {
         $("#registrationForm")[0].reset();
-        rsubmitMSG(true, "Request Submitted!");
+        rsubmitMSG(true, "¡Solicitud enviada!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
     }
 
@@ -252,7 +252,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             nformError();
-            nsubmitMSG(false, "Please fill all fields!");
+            nsubmitMSG(false, "¡Por favor, completa todos los campos!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -281,7 +281,7 @@
 
     function nformSuccess() {
         $("#newsletterForm")[0].reset();
-        nsubmitMSG(true, "Subscribed!");
+        nsubmitMSG(true, "¡Suscripción realizada!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
     }
 
@@ -306,7 +306,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Please fill all fields!");
+            csubmitMSG(false, "Por favor, completa todos los campos.");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -337,7 +337,7 @@
 
     function cformSuccess() {
         $("#contactForm")[0].reset();
-        csubmitMSG(true, "Message Submitted!");
+        csubmitMSG(true, "¡Mensaje enviado!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
         $("textarea").removeClass('notEmpty'); // resets the field label after submission
     }
@@ -363,7 +363,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Please fill all fields!");
+            psubmitMSG(false, "Por favor, completa todos los campos.");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -395,7 +395,7 @@
 
     function pformSuccess() {
         $("#privacyForm")[0].reset();
-        psubmitMSG(true, "Request Submitted!");
+        psubmitMSG(true, "¡Solicitud enviada!");
         $("input").removeClass('notEmpty'); // resets the field label after submission
     }
 
