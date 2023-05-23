@@ -42,6 +42,13 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+body{
+	padding:100px 0;
+	background-color:#efefef
+  }
+  a, a:hover{
+	color:#333
+  }
 body,
 html {
     width: 100%;
