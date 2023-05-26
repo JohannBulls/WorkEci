@@ -54,32 +54,39 @@
     <!-- end of mobile menu toggle button -->
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-          <a class="nav-link page-scroll" href="userInfo.html">USER <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="reserva.html">RESERVAR</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link page-scroll" href="plan.html">MEMBRESIAS Y PLANES</a>
-        </li>
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle page-scroll" href="user.html" id="navbarDropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">USER</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="userInfo.html"><span class="item-text">John Doe</span></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="index.html"><span class="item-text">Cerrar Secion</span></a>
+              </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="reserva.html">RESERVAR</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link page-scroll" href="plan.html">MEMBRESIAS Y PLANES</a>
+          </li>
       </ul>
       <span class="nav-item social-icons">
-        <span class="fa-stack">
-          <a href="https://www.facebook.com/EscuelaIng?mibextid=LQQJ4d">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-facebook-f fa-stack-1x"></i>
-          </a>
-        </span>
-        <span class="fa-stack">
-          <a href="https://twitter.com/escuelaing?s=11">
-            <i class="fas fa-circle fa-stack-2x"></i>
-            <i class="fab fa-twitter fa-stack-1x"></i>
-          </a>
-        </span>
+          <span class="fa-stack">
+              <a href="https://www.facebook.com/EscuelaIng?mibextid=LQQJ4d">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </a>
+          </span>
+          <span class="fa-stack">
+              <a href="https://twitter.com/escuelaing?s=11">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+              </a>
+          </span>
       </span>
-    </div>
+  </div>
   </nav> <!-- end of navbar -->
   <!-- end of navigation -->
 
