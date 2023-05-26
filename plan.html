@@ -117,7 +117,7 @@
                 <li class="active">Biblioteca</li>
               </ul>
             </div>
-            <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Empezar</a>
+            <div class="box-pricing-button" data-toggle="modal" data-target="#exampleModalCenter"><a class="button button-lg button-block button-gray-4" >Empezar</a>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
                 <li class="active">2 + Invitados</li>
               </ul>
             </div>
-            <div class="box-pricing-button"><a class="button button-lg button-block button-primary" href="#">Empezar</a>
+            <div class="box-pricing-button"  data-toggle="modal" data-target="#exampleModalCenter"><a class="button button-lg button-block button-primary">Empezar</a>
             </div>
             <div class="box-pricing-badge">popular</div>
           </div>
@@ -167,7 +167,7 @@
                 <li class="active">Actividades Extras</li>
               </ul>
             </div>
-            <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Empezar</a>
+            <div class="box-pricing-button" data-toggle="modal" data-target="#exampleModalCenter"><a class="button button-lg button-block button-gray-4" >Empezar</a>
             </div>
           </div>
         </div>
@@ -193,7 +193,7 @@
                 <li class="active">Actividades Extras</li>
               </ul>
             </div>
-            <div class="box-pricing-button"><a class="button button-lg button-block button-gray-4" href="#">Empezar</a>
+            <div class="box-pricing-button" data-toggle="modal" data-target="#exampleModalCenter"><a class="button button-lg button-block button-gray-4" >Empezar</a>
             </div>
           </div>
         </div>
@@ -275,6 +275,58 @@
       </div> <!-- end of container -->
     </div> <!-- end of ex-basic -->
     <!-- end of terms content -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Comprar Membresia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="creditCardNumber">Número de Tarjeta de Crédito</label>
+            <input type="number" class="form-control" id="creditCardNumber" placeholder="Ingrese el número de tarjeta de crédito" pattern="[0-9]*" inputmode="numeric">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="expirationDate">Fecha de Vencimiento</label>
+              <input type="date" class="form-control" id="expirationDate" placeholder="MM/AA">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cvv">CVV</label>
+              <input type="number" class="form-control" id="cvv" placeholder="CVV">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="creditCardName">Nombre de Tarjeta de Crédito</label>
+            <input type="text" class="form-control" id="creditCardName" placeholder="Ingrese el nombre de tarjeta de crédito">
+          </div>
+          <div class="form-group">
+            <label for="address">Dirección</label>
+            <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección">
+          </div>
+          <div class="form-group">
+            <label for="country">País</label>
+            <input type="text" class="form-control" id="country" placeholder="Ingrese su país">
+          </div>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="number" class="form-control" id="phone" placeholder="Ingrese su número de teléfono">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar y Pagar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Scripts -->
     <script>
