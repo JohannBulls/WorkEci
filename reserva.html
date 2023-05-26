@@ -109,7 +109,9 @@
         </div> <!-- end of container -->
     </header> <!-- end of ex-header -->
     <!-- end of header -->
-
+    <div id="notificationContainer" class="position-fixed bottom-0 end-0 p-3">
+        <div id="notification" class="alert alert-success d-none" role="alert"></div>
+      </div>
     <!-- Terms Content -->
     <div class="ex-basic-2">
         <div class="container">
@@ -385,8 +387,9 @@
                         </table>
                     </div>
                     <div class="mt-4">
-                            <button type="submit" class="form-control-submit-button">Reservar</button>
-                        </div>
+                        <button id="reservarBtn" type="submit" class="form-control-submit-button">Reservar</button>
+                      </div>
+                      
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic -->
     <!-- end of terms content -->
@@ -401,5 +404,30 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        // Esperar a que el DOM esté cargado
+        document.addEventListener("DOMContentLoaded", function() {
+          // Obtener referencia al botón "Reservar"
+          var reservarBtn = document.getElementById("reservarBtn");
+      
+          // Escuchar el evento click del botón
+          reservarBtn.addEventListener("click", function(event) {
+            // Prevenir el comportamiento por defecto del formulario
+            event.preventDefault();
+      
+            // Mostrar la notificación
+            var notificationContainer = document.getElementById("notificationContainer");
+            var notification = document.getElementById("notification");
+            notification.innerHTML = "¡Registro realizado con éxito!";
+            notification.classList.remove("d-none");
+      
+            // Ocultar la notificación después de 3 segundos
+            setTimeout(function() {
+              notification.classList.add("d-none");
+            }, 3000);
+          });
+        });
+      </script>
+      
 </body>
 </html>
